@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+img{
+    position: relative;
+    padding: 0;
+}
+.python-img{
+    width: 200;
+    height: 200;
+}
