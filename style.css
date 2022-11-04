@@ -72,7 +72,7 @@ nav {
 
 .handburger.is-active span:nth-child(2) {
   opacity: 0;
-  transform: translate(15px);
+  transform: translateX(15px);
 
 }
 
@@ -80,6 +80,9 @@ nav {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 
+.handburger.is-active:hover span {
+  background-color: #B600FD;
+}
 
 .menu {
   display: none;
@@ -101,14 +104,4 @@ nav {
 .menu a.is-active,
 .menu a:hover {
   background-color: #B600FD;
-}
-
-@media(min-width:780px) {
-  .handburger {
-    display: none;
-  }
-
-  .menu {
-    display: black;
-  }
 }
