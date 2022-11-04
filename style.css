@@ -1,5 +1,8 @@
-body {
-  background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'fira sans', 'sans-serif';
 }
 
 .container {
@@ -84,6 +87,8 @@ nav {
   background-color: #B600FD;
 }
 
+
+
 .menu {
   display: none;
   flex: 1 1 0%;
@@ -92,16 +97,17 @@ nav {
 }
 
 .menu a {
-  color: white;
-  margin: 0 16px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.4s;
-  padding: 8px 16px;
-  border-radius: 99px;
+  color: black;
+  margin: 0 -16px;
 }
 
-.menu a.is-active,
-.menu a:hover {
-  background-color: #B600FD;
+
+@media (min-width: 768px) {
+  .handburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
 }
