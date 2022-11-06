@@ -98,9 +98,18 @@ nav {
 
 .menu a {
   color: black;
-  margin: 0 -16px;
+  margin: 0 16px;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 99px;
+
 }
 
+.menu a.is-active,
+.menu a:hover {
+  background-color: #B600FD;
+}
 
 @media (min-width: 768px) {
   .handburger {
