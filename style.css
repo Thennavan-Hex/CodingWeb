@@ -42,9 +42,9 @@ a {
 
 .nav-link {
   transition: 0.7s ease;
-}s
+}
 
-.nav-link:hover {
+s .nav-link:hover {
   color: rgb(0, 0, 0);
 
 }
@@ -105,11 +105,4 @@ a {
     left: 0;
 
   }
-}
-.land h1  {
-  color: rgb(0, 0, 0);
-  font-size: 72px;
-  background: -webkit-linear-gradient(right,rgb(79, 79, 80), rgb(46, 0, 173));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
