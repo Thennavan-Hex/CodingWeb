@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: black;
+  background-color: rgb(32, 40, 155);
 
 }
 
@@ -32,7 +32,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 
 }
 
@@ -42,10 +42,10 @@ a {
 
 .nav-link {
   transition: 0.7s ease;
-}
+}s
 
 .nav-link:hover {
-  color: dodgerblue;
+  color: rgb(0, 0, 0);
 
 }
 
@@ -105,4 +105,11 @@ a {
     left: 0;
 
   }
+}
+.land h1  {
+  color: rgb(0, 0, 0);
+  font-size: 72px;
+  background: -webkit-linear-gradient(right,rgb(79, 79, 80), rgb(46, 0, 173));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
