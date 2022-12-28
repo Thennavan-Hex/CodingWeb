@@ -1,13 +1,7 @@
-body {
-  position: relative;
+body{
   width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
 
-  font-family: 'Arial';
-  font-weight: 100;
-  line-height: 1.2em;
-  font-size: 12px;
   color: rgba(255, 255, 255, 1);
   
   -webkit-font-smoothing: antialiased;
@@ -15,53 +9,51 @@ body {
   
   background-color: #000000;
 }
-
 *{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-a,
-a:hover,
-a:link ,     
-a:visited,   
-a:active{ text-decoration: none; }
 
-
-.bracketButton{
-  width:100%;
-  position: relative;
-  margin-top:30px;
-  padding-top:30px;
+.cont{
+  color: white;
+}
+.title{
+font-size: 70px;
 }
 
-a.movingBrackets {
+nav ul{
+  float: right;
+  margin-top: -5%;
+  margin-right: 10%;
+  margin-right: 4%;
+}
+nav ul li{
+  display: inline-block;
+
+  margin: 0 40px;
+}
+nav ul li a{
+  text-decoration: none;
   font-size: 20px;
-  background: none;
-  border: none;
-  color: rgba(255, 255, 255, 1);
-  width: 100%;
-  text-align: center;
-  position: relative;
-  float: left;
-  width: 10%;
-  left: 60%;
+  color: white;
 }
 
-a.movingBrackets{
+
+nav ul li a{
   padding: 0 6px;
 }
-a.movingBrackets::before {
+nav ul li a::before {
 /*   content: "[ "; */
   margin: -0.1em 0px 0px -0.8em;
 }
-a.movingBrackets::after {
+nav ul li a::after {
 /*   content: " ]"; */
   margin: -0.1em 0px 0px 0.3em;
 }
 
 
-a.movingBrackets::before, a.movingBrackets::after {
+nav ul li a::before, nav ul li a::after {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -69,22 +61,26 @@ a.movingBrackets::before, a.movingBrackets::after {
   position: absolute;
 }
 
-a.movingBrackets:hover {
+nav ul li a:hover {
   color:rgb(0, 206, 110)
 }
-a.movingBrackets:hover::before  {
+nav ul li a:hover:before  {
     margin: -0.1em 0px 0px -1.2em;
 }
-a.movingBrackets:hover::after  {
+nav ul li a:hover::after  {
   margin: -0.1em 0px 0px 0.7em;
 }
 
 
 /* Custom Brackets */
 
-a.movingBrackets.square-brackets::before {
-  content: "[ ";
+nav ul li a::before {
+  content: "[";
 }
-a.movingBrackets.square-brackets::after {
-  content: " ]";
+nav ul li a::after {
+  content: "]";
+}
+
+.landing{
+  font-size: 70px;
 }
