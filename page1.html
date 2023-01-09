@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page!</title>
+</head>
+<body>
+<header>
+    <div class="cont">
+      <h1 class="title">Solutions</h1>
+    </div>
+    <div class="nav-list">
+      <nav>
+      <ul>
+        <li class="nav-items">
+          <a class="movingBrackets" href="#"> HOME </a>
+        </li>
+        <li class="nav-items">
+          <a class="movingBrackets" href="#">CONTACT US</a>
+        </li>
+        <li class="nav-items">
+          <a class="movingBrackets" href="#">ABOUT</a>
+        </li>
+        <li class="nav-items">
+          <a class="movingBrackets" href="#">DATA</a>
+        </li> 
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="box">
+      <h2># Recursive function to check if a<br>
+        # string is palindrome<br>
+        def isPalindrome(s):<br>
+          # to change it the string is similar case<br>
+          s = s.lower()<br>
+          # length of s<br>
+          l = len(s)<br>
+        
+          # if length is less than 2<br>
+          if l < 2:<br>
+            return True<br>
+        
+          # If s[0] and s[l-1] are equal<br>
+          elif s[0] == s[l - 1]:<br>
+        
+            # Call is palindrome form substring(1,l-1)<br>
+            return isPalindrome(s[1: l - 1])<br>
+            <br>
+          else:<br>
+            return False<br>
+        
+        # Driver Code<br>
+        s = "MalaYaLam"<br>
+        ans = isPalindrome(s)<br>
+        <br>
+        if ans:<br>
+          print("Yes")<br>
+        
+        else:<br>
+          print("No")<br>
+        </h2>
+    </div>
+  </section>
+</body>
+</html>
+<style>
+    body{
+  width: 100%;
+  height: 100%;
+
+  color: rgba(255, 255, 255, 1);
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: #000000;
+  overflow-x: hidden;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.land{
+  position: static;
+}
+.cont{
+  color: white;
+}
+.title{
+font-size: 70px;
+}
+
+nav ul{
+  float: right;
+  margin-top: -5%;
+  margin-right: 10%;
+  margin-right: 4%;
+}
+nav ul li{
+  display: inline-block;
+
+  margin: 0 40px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+
+nav ul li a{
+  padding: 0 6px;
+}
+nav ul li a::before {
+/*   content: "[ "; */
+  margin: -0.1em 0px 0px -0.8em;
+}
+nav ul li a::after {
+/*   content: " ]"; */
+  margin: -0.1em 0px 0px 0.3em;
+}
+
+
+nav ul li a::before, nav ul li a::after {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+}
+
+nav ul li a:hover {
+  color:rgb(0, 206, 110)
+}
+nav ul li a:hover:before  {
+    margin: -0.1em 0px 0px -1.2em;
+}
+nav ul li a:hover::after  {
+  margin: -0.1em 0px 0px 0.7em;
+}
+
+
+nav ul li a::before {
+  content: "[";
+}
+nav ul li a::after {
+  content: "]";
+}
+
+
+.box {
+  transition: box-shadow .3s;
+  width: 30%;
+  margin: 10%;
+  border-radius:10px;
+  border: 1px solid rgb(131, 126, 126);
+  background:#282828;
+  float:none;
+  
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+</style>
+
